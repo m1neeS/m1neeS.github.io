@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- poppins font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+         <!-- boostrap cdn -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+         <!-- jquery cdn -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <!-- fontawesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+         <!-- css link -->
+         <link rel="stylesheet" href="asset/style.css">
+    
+        <title>Cek Pembayaran | Kompark</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container d-flex justify-content-between align-items-center">
+                    <div class="nav-logo">
+                        <img src="img/amikom.png" alt="" class="nav-img">
+                        <span style="font-weight: bold;">KomPark</span>
+                    </div>
+
+                    <div class="nav-btn d-flex justify-content-around">
+                        <div class="btn-daftar">
+                            <a href="#" id="signUp-btn" role="button">
+                                Daftar
+                            </a>
+                        </div>
+                        <div class="btn-login">
+                            <a href="#" id="login-btn" role="button">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>    
+
+        <main>
+            <div class="container">
+                <div class="form-container">
+                    <form action="" method="POST">
+                        <div class="form-title mb-5">
+                            <h2 style="color: #8E2DE2;" class="fw-bold">
+                                Pembayaran
+                            </h2>
+                        </div>
+
+                        <div class="form-content">
+                            <div class="form-label">
+                                <span>No Virtual Account</span> 
+                            </div>
+                            <div class="form-input">
+                                <div class="form-control">
+                                    <input type="text" name="kode_va" class="input-va" readonly >
+                                    <span><i class="fa-regular fa-copy" style="color: #8E2DE2; font-size: 14pt;"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-content mt-5">
+                            <h6>Cara melakukan pembayaran</h6>
+                            <ul style="list-style: decimal;">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor. Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor. Lorem, ipsum.</li>
+                                <li>Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-content">
+                            <button name="bayar" class="form-btn w-100 mt-5">Bayar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

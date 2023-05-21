@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- poppins font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+ 
+         <!-- boostrap cdn -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+         <!-- jquery cdn -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <!-- fontawesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+         <!-- css link -->
+         <link rel="stylesheet" href="asset/style.css">
+ 
+        <title>Home | Kompark</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container d-flex justify-content-between align-items-center">
+                    <div class="nav-logo">
+                        <img src="img/amikom.png" alt="" class="nav-img">
+                        <span style="font-weight: bold;">KomPark</span>
+                    </div>
+
+                    <div class="nav-btn d-flex justify-content-around">
+                        <div class="btn-daftar">
+                            <a href="#" id="signUp-btn" role="button">
+                                Daftar
+                            </a>
+                        </div>
+                        <div class="btn-login">
+                            <a href="#" id="login-btn" role="button">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>    
+
+        <div class="modal" id="myModalLogin">
+            <div class="modal-box d-flex" id="myModal">
+                <div class="modal-left text-center">
+                    <img src="img/login-img.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <div class="header">
+                        <button class="btn-close float-end" id="loginClose-btn"></button>
+                    </div>
+
+                    <div class="right-content">
+                        <h1 class="display-5 fw-bold">Login</h1>          
+                        <div class="content-input mt-5">
+                            <div class="input-control">
+                                <label for="email" class="form-label label">Username</label>
+                                <div class="d-flex input">
+                                    <span><i class="fa fas fa-user" style="color: #7D7D7D; width: 14px; height: 16px; margin-top: 4px;"></i></span>
+                                    <input type="text" name="username" id="" class="container-fluid" placeholder="Enter your username">
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <label for="password" class="form-label label">Password</label>
+                                <div class="d-flex input">
+                                    <span><i class="fa fas fa-lock" style="color: #7D7D7D; width: 14px; height: 16px; margin-top: 7px;"></i></span>
+                                    <input type="password" name="password" id="" class="container-fluid" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <a href="#" class="btn-login btn btn-outline-dark container-fluid" name="btn-login">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sign Up -->
+        <div class="modal"  id="myModalSign">
+            <div class="modal-box d-flex"">
+                <div class="modal-left text-center">
+                    <img src="img/sign-img.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <div class="header float-end">
+                        <button class="btn-close" id="signClose-btn"></button>
+                    </div>
+
+                    <div class="right-content">
+                        <h1 class="display-5 fw-bold">Sign Up</h1>          
+                        <div class="content-input mt-5">
+                            <div class="input-control">
+                                <label for="email" class="form-label label">Display Name</label>
+                                <div class="d-flex input">
+                                    <span><i class="fa fas fa-user" style="color: #7D7D7D; width: 14px; height: 16px; margin-top: 4px;"></i></span>
+                                    <input type="text" name="display_name" id="" class="container-fluid" placeholder="Enter your display name">
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <label for="username" class="form-label label">Username</label>
+                                <div class="d-flex input">
+                                    <span><i class="fa fas fa-user" style="color: #7D7D7D; width: 14px; height: 16px; margin-top: 4px;"></i></span>
+                                    <input type="text" name="username" id="" class="container-fluid" placeholder="Enter your username">
+                                </div>
+                            </div>
+                            <div class="input-control">
+                                <label for="password" class="form-label label">Password</label>
+                                <div class="d-flex input">
+                                    <span><i class="fa fas fa-lock" style="color: #7D7D7D; width: 14px; height: 16px; margin-top: 7px;"></i></span>
+                                    <input type="password" name="password" id="" class="container-fluid" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <a href="#" class="btn-login btn btn-outline-dark container-fluid" name="btn-sign">
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section id="hero">
+                <div class="hero-title">
+                    <h2 class="text-center display-4 fw-bold">KomPark</h2>                    
+                    <h2 class="text-center display-6 fw-normal">Solusi parkir anda</h2>                    
+                </div>
+            </section>
+
+            <section id="booking">
+                <div class="book-container">
+                    <div class="book-title mb-5">
+                        <h2 class="text-center"><span>Pesan</span>  <span class="fw-bold" style="color: #8E2DE2;">Sekarang</span> </h2>
+                    </div>
+                    
+                    <div class="book-box m-auto">
+                        <form action="" method="POST">
+                            <div class="d-flex justify-content-between">
+                                <div class="book-control">
+                                    <div class="book-label">
+                                        <label for="" class="form-label">Area Parkir</label>
+                                    </div>
+                                    <div class="book-input">
+                                        <select name="area-parkir" id="" class="form-select">
+                                            <option value="" selected>Pilih area parkir</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+                                <div class="book-control">
+                                    <div class="book-label">
+                                        <label for="" class="form-label">Kode Parkir</label>
+                                    </div>
+                                    <div class="book-input">
+                                        <select name="kode-parkir" id="" class="form-select">
+                                            <option value="" selected>Pilih kode parkir</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+                                <div class="book-control">
+                                    <div class="book-label">
+                                        <label for="" class="form-label">Harga Parkir</label>
+                                    </div>
+                                    <div class="book-input">
+                                        <input type="text" class="form-control" name="harga-parkir" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="book-btn text-center">
+                                <button name="submit" class="w-75">
+                                    Pesan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefit">
+                <div class="ben-container">
+                    <div class="ben-title mb-5">
+                        <h2 class="text-center"><span>Mengapa Memilih</span>  <span class="fw-bold" style="color: #8E2DE2;">Kompark?</span> </h2>
+                    </div>
+                    <div class="ben-content d-flex justify-content-around">
+                        <div class="ben-card">
+                            <div class="card p-5 pt-0 text-center">
+                                <img src="img/easy.png" alt="" class="card-img-top ben-img m-auto">
+                                <div class="card-body">
+                                    <div class="card-title mb-5">
+                                        <h4 class="fw-bold" style="color: #8E2DE2;">Mudah Digunakan</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p class="fw-semibold">Easy-to-use, mudah digunakan oleh pengguna awam</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ben-card">
+                            <div class="card p-5 pt-0 text-center">
+                                <img src="img/fast.png" alt="" class="card-img-top ben-img m-auto">
+                                <div class="card-body">
+                                    <div class="card-title mb-5">
+                                        <h4 class="fw-bold" style="color: #8E2DE2;">Proses Cepat</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p class="fw-semibold">Proses transaksi dijamin cepat, aman dan lancar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ben-card">
+                            <div class="card p-5 pt-0 text-center">
+                                <img src="img/pay.png" alt="" class="card-img-top ben-img m-auto">
+                                <div class="card-body">
+                                    <div class="card-title mb-5">
+                                        <h4 class="fw-bold" style="color: #8E2DE2;">Pembayaran Mudah</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p class="fw-semibold">Pembayaran mudah dan di-support oleh banyak dompet digital</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="asset/script.js"></script>
+    </body>
+</html>
